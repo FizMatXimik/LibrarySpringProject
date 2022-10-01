@@ -10,8 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc1e3c7b-cee2-42c8-bec8-d1a1738c6e9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/dao/BookDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/person.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +176,7 @@
       <workItem from="1664362358214" duration="1151000" />
       <workItem from="1664369580300" duration="2317000" />
       <workItem from="1664651378639" duration="2775000" />
-      <workItem from="1664654166956" duration="4900000" />
+      <workItem from="1664654166956" duration="7324000" />
     </task>
     <servers />
   </component>
