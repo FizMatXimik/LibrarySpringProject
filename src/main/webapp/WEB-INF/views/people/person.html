@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
+<html lang="ru" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Клиент</title>
+    <title th:text="${'Клиент ' + person.getFio()}">Клиент</title>
 </head>
 <body>
-<p th:text="${person.getId()}"></p>
-<p th:text="${person.getFio()}"></p>
-<p th:text="${person.getBirth_year()}"></p>
+
+<p th:text="${person.getFio() + ', ' + person.getBirth_year()}" th:href="@{/people/{id}(id=${person.getId()})}">Имя человека</p>
+
+<br/>
+<hr/>
+
+<a th:href="@{/people/{id}/edit(id=${person.getId()})}"><button>Редактировать</button></a>
+
+<form th:method="DELETE" th:action="@{/people/{id}(id=${person.getId()})}">
+    <input type="submit" value="Delete">
+</form>
+
 </body>
 </html>

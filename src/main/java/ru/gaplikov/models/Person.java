@@ -1,10 +1,16 @@
 package ru.gaplikov.models;
 
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+
 public class Person {
     private int id;
 
+    @NotEmpty(message = "ФИО должно быть заполнено")
     private String fio;
 
+    @Min(value = 1900, message = "Год рождения должен быть больше 1900")
     private int birth_year;
 
     public Person() {}
