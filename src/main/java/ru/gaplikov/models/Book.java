@@ -9,13 +9,16 @@ public class Book {
 
     private int year;
 
+    /*private int person_id;*/
+
     public Book() {}
 
-    public Book(int id, String name, String author, int year) {
+    public Book(int id, String name, String author, int year/*, int person_id*/) {
         this.id = id;
         this.name = name;
         this.author = author;
         this.year = year;
+        /*this.person_id = person_id;*/
     }
 
     public int getId() {
@@ -49,4 +52,13 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
+
+    /*public int getPerson_id() {
+        return person_id;
+    }
+
+    public void setPerson_id(int person_id) {
+        this.person_id = person_id;
+    }*/
+
 }

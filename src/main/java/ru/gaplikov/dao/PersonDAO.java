@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import ru.gaplikov.controllers.PersonController;
+import ru.gaplikov.models.Book;
 import ru.gaplikov.models.Person;
 
 import java.util.List;
@@ -42,5 +43,9 @@ public class PersonDAO {
 
     public void deletePerson(int id) {
         jdbcTemplate.update("DELETE FROM Person WHERE id=?", id);
+    }
+
+    public List<Person> getPersonByBookId(int id) {
+        return jdbcTemplate.query("SELECT person.* FROM person inner join book on book.person_id=person.id WHERE book.id = ?", new BeanPropertyRowMapper<>(Person.class), id);
     }
 }
