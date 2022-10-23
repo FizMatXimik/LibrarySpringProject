@@ -10,26 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc1e3c7b-cee2-42c8-bec8-d1a1738c6e9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/services/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/services/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/repositories/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/repositories/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties.origin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/services/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/services/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/services/PersonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties.origin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +189,7 @@
       <workItem from="1666524012579" duration="114000" />
       <workItem from="1666524139781" duration="644000" />
       <workItem from="1666544552563" duration="387000" />
-      <workItem from="1666544950795" duration="4605000" />
+      <workItem from="1666544950795" duration="5178000" />
     </task>
     <servers />
   </component>

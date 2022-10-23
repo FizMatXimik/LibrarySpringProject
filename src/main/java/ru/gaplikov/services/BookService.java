@@ -1,4 +1,4 @@
-package ru.gaplikov.config.services;
+package ru.gaplikov.services;
 
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;

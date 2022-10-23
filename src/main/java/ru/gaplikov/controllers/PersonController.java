@@ -8,9 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.gaplikov.config.services.PersonService;
-import ru.gaplikov.dao.BookDAO;
-import ru.gaplikov.dao.PersonDAO;
+import ru.gaplikov.services.PersonService;
 import ru.gaplikov.models.Person;
 import ru.gaplikov.util.PersonValidator;
 
