@@ -10,19 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc1e3c7b-cee2-42c8-bec8-d1a1738c6e9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/newForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/updateForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/725a65f9-3a42-40f6-9a60-2876ac30d103.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/725a65f9-3a42-40f6-9a60-2876ac30d103.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/services/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/services/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/repositories/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/repositories/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties.origin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/controllers/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/dao/PersonDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gaplikov/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties.origin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/book.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="HTML File" />
       </list>
@@ -50,6 +58,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2FJ9g7sV8PK7ssNQNYz1gVkqXPo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -185,7 +196,15 @@
       <workItem from="1664651378639" duration="2775000" />
       <workItem from="1664654166956" duration="7384000" />
       <workItem from="1665602508692" duration="3959000" />
-      <workItem from="1665937728941" duration="10941000" />
+      <workItem from="1665937728941" duration="12019000" />
+      <workItem from="1666178160534" duration="873000" />
+      <workItem from="1666179510690" duration="11000" />
+      <workItem from="1666179550270" duration="625000" />
+      <workItem from="1666520253417" duration="3749000" />
+      <workItem from="1666524012579" duration="114000" />
+      <workItem from="1666524139781" duration="644000" />
+      <workItem from="1666544552563" duration="387000" />
+      <workItem from="1666544950795" duration="4605000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,7 @@
 
 <p th:text="${book.getName() + ', ' + book.getAuthor() + ', ' + book.getYear()}" th:href="@{/books/{id}(id=${book.getId()})}">Название книги</p>
 
-<div th:if="${#lists.isEmpty(currentPerson)}">
+<div th:if="${people}">
     <p>Эта книга свободна. Кому её назначить?</p>
     <form th:method="PATCH" th:action="@{/books/{id}/take(id=${book.getId()})}">
         <label for="person">Выберите клиента</label>
@@ -19,8 +19,8 @@
     </form>
 </div>
 
-<div th:if="${not #lists.isEmpty(currentPerson)}">
-    <p th:text="${'Книга сейчас у: ' + currentPerson[0].getFio()}"></p>
+<div th:if="${currentPerson}">
+    <p th:text="${'Книга сейчас у: ' + currentPerson.getFio()}"></p>
     <form th:method="PATCH" th:action="@{/books/{id}/free(id=${book.getId()})}">
         <input type="submit" value="Освободить книгу" />
     </form>

@@ -1,24 +1,38 @@
 package ru.gaplikov.models;
 
+import javax.persistence.*;
+
+import java.util.Objects;
+
+@Entity
+@Table(name = "Book")
 public class Book {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "author")
     private String author;
 
+    @Column(name = "year")
     private int year;
 
-    /*private int person_id;*/
+    @ManyToOne
+    @JoinColumn(name = "person_id", referencedColumnName = "id")
+    private Person person;
+
 
     public Book() {}
 
-    public Book(int id, String name, String author, int year/*, int person_id*/) {
+    public Book(int id, String name, String author, int year) {
         this.id = id;
         this.name = name;
         this.author = author;
         this.year = year;
-        /*this.person_id = person_id;*/
     }
 
     public int getId() {
@@ -53,12 +67,34 @@ public class Book {
         this.year = year;
     }
 
-    /*public int getPerson_id() {
-        return person_id;
+    public Person getPerson() {
+        return person;
     }
 
-    public void setPerson_id(int person_id) {
-        this.person_id = person_id;
-    }*/
+    public void setPerson(Person person) {
+        this.person = person;
+    }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", year=" + year +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return id == book.id && year == book.year && Objects.equals(name, book.name) && Objects.equals(author, book.author);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, author, year);
+    }
 }
