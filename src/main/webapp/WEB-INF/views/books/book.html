@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<p th:text="${book.getName() + ', ' + book.getAuthor() + ', ' + book.getYear()}" th:href="@{/books/{id}(id=${book.getId()})}">Название книги</p>
+<p th:text="${book.getName() + ', ' + book.getAuthor() + ', ' + book.getYear() + ', ' + book.getTookAt()}" >Название книги</p>
 
 <div th:if="${people}">
     <p>Эта книга свободна. Кому её назначить?</p>

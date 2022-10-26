@@ -2,6 +2,7 @@ package ru.gaplikov.controllers;
 
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -26,8 +27,9 @@ public class BookController {
     }
 
     @GetMapping()
-    public String index(Model model) {
-        model.addAttribute("books", bookService.findAll());
+    public String index(Model model, @RequestParam(required = false) Integer page, @RequestParam(required = false) Integer books_per_page,
+                        @RequestParam(required = false) Boolean sort_by_year) {
+        model.addAttribute("books", bookService.findAll(page, books_per_page, sort_by_year));
         return "books/index";
     }
 
@@ -96,4 +98,25 @@ public class BookController {
         bookService.delete(id);
         return "redirect:/books";
     }
+
+    @GetMapping("/search")
+    public String showSearchFormBook(Model model, @RequestParam(defaultValue = "") String name) {
+        Book searchedBook = bookService.findBookByNameLike(name);
+
+        if (searchedBook != null) {
+            Person owner = bookService.getBookOwner(searchedBook.getId());
+            if(owner != null) {
+                model.addAttribute("currentPerson", owner);
+            } else {
+                model.addAttribute("NoOwner", true);
+            }
+            model.addAttribute("searchedBook", searchedBook);
+        } else {
+            model.addAttribute("noBooks", true);
+        }
+        return "books/search";
+    }
+
+
+
 }

@@ -2,6 +2,7 @@ package ru.gaplikov.models;
 
 import javax.persistence.*;
 
+import java.util.Date;
 import java.util.Objects;
 
 @Entity
@@ -20,6 +21,14 @@ public class Book {
 
     @Column(name = "year")
     private int year;
+
+    @Column(name = "took_at")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date tookAt;
+
+    @Transient
+    private boolean isOverdue;
+
 
     @ManyToOne
     @JoinColumn(name = "person_id", referencedColumnName = "id")
@@ -73,6 +82,24 @@ public class Book {
 
     public void setPerson(Person person) {
         this.person = person;
+    }
+
+    public Date getTookAt() {
+        return tookAt;
+    }
+
+    public void setTookAt(Date tookAt) {
+        this.tookAt = tookAt;
+    }
+
+    public boolean isOverdue() {
+        long dev = new Date().getTime() - tookAt.getTime();
+        long days10 = 864000000L;
+        return dev > days10;
+    }
+
+    public void setOverdue(boolean overdue) {
+        isOverdue = overdue;
     }
 
     @Override
